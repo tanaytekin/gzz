@@ -164,3 +164,13 @@ void gzz_shader_destroy(u32 shader)
 {
     glDeleteProgram(shader);
 }
+
+void gzz_shader_use(u32 shader)
+{
+    glUseProgram(shader);
+}
+
+void gzz_shader_set_mat4(u32 shader, const char *name, mat4 mat)
+{
+    glUniformMatrix4fv(glGetUniformLocation(shader, name), 1, GL_FALSE, &mat[0][0]);
+}
