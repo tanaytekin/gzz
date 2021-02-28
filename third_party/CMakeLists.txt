@@ -1,2 +1,5 @@
 add_subdirectory(glfw)
 add_subdirectory(glad)
+option(CGLM_STATIC "Static build" ON)
+option(CGLM_SHARED "Shared build" OFF)
+add_subdirectory(cglm)
