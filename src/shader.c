@@ -160,7 +160,18 @@ u32 gzz_shader_create(const char *vertex_path, const char *fragment_path) {
     return program;
 }
 
+
 void gzz_shader_destroy(u32 shader)
 {
     glDeleteProgram(shader);
+}
+
+void gzz_shader_use(u32 shader)
+{
+    glUseProgram(shader);
+}
+
+void gzz_shader_set_1i(u32 shader, const char *name, i32 v)
+{
+    glUniform1i(glGetUniformLocation(shader, name), v);
 }

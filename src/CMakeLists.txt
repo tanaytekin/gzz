@@ -1,1 +1,1 @@
-add_executable(gzz main.c log.c log.h common.h shader.h shader.c)
+add_executable(gzz main.c log.h log.c common.h shader.h shader.c texture2d.h texture2d.c batch_renderer.h batch_renderer.c sprite.h texture_region.h)

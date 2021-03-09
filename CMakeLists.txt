@@ -15,4 +15,4 @@ add_subdirectory(src)
 
 find_package(OpenGL REQUIRED)
 
-target_link_libraries(gzz glad glfw OpenGL::GL)
+target_link_libraries(gzz stb_image cglm glad glfw OpenGL::GL)
